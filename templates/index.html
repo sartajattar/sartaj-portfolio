@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sartaj Hiralal Attar | Portfolio</title>
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">SARTAJ <span>ATTAR</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="greeting">Welcome to my professional space</span>
+                <h1>Sartaj Hiralal Attar</h1>
+                <h2>Data Analyst & Salesforce CRM Enthusiast</h2>
+                <p>Results-oriented Computer Science graduate with strong expertise in Python, SQL, Power BI, HTML, and CSS, complemented by hands-on experience in data analytics and business intelligence. Aspiring to build a career in the Salesforce ecosystem by leveraging analytical, technical, and problem-solving skills to optimize CRM processes, automate workflows, and deliver data-driven business solutions.</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn primary-btn">Contact Me</a>
+                    <a href="mailto:atarsartaj95@gmail.com" class="btn secondary-btn"><i class="fa-solid fa-envelope"></i> Email Me</a>
+                </div>
+            </div>
+            <div class="hero-graphic">
+                <div class="abstract-shape">
+                    <i class="fa-solid fa-cloud floating-icon icon-1" style="color: #00a1e0;"></i>
+                    <i class="fa-solid fa-database floating-icon icon-2"></i>
+                    <i class="fa-solid fa-chart-pie floating-icon icon-3"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="education-section" style="background: rgba(30, 41, 59, 0.1);">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="edu-grid">
+            <div class="edu-card">
+                <div class="edu-icon" style="color: #00a1e0;"><i class="fa-brands fa-salesforce"></i></div>
+                <h3>CRM Platforms</h3>
+                <p class="institute">Salesforce CRM, Sales Cloud, Service Cloud</p>
+            </div>
+            <div class="edu-card">
+                <div class="edu-icon" style="color: #f59e0b;"><i class="fa-solid fa-chart-line"></i></div>
+                <h3>Data & Analytics</h3>
+                <p class="institute">Power BI, SQL</p>
+            </div>
+            <div class="edu-card">
+                <div class="edu-icon" style="color: #38bdf8;"><i class="fa-brands fa-python"></i></div>
+                <h3>Programming & Web</h3>
+                <p class="institute">Python, C Programming, HTML, CSS</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="projects-section">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="project-grid" style="grid-template-columns: 1fr;">
+            <div class="project-card" style="text-align: left; display: flex; flex-direction: column; gap: 10px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+                    <h3>Data Analyst Intern</h3>
+                    <span style="color: #38bdf8; font-weight: 600;">CloudBlitz Technologies (01/04/2026)</span>
+                </div>
+                <p style="font-size: 16px; color: #fff; font-weight: 500;">E-Commerce Sales Performance & Trend Analysis Dashboard</p>
+                <p>Developed a real-time E-Commerce Sales Performance & Trend Analysis Dashboard using Power BI and SQL to monitor revenue, sales trends, customer behavior, and key business KPIs. Enabled data-driven decision-making through interactive visualizations, automated reporting, and actionable business insights.</p>
+                <div class="project-tags">
+                    <span>Power BI</span>
+                    <span>SQL</span>
+                    <span>Business Intelligence</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section" style="background: rgba(30, 41, 59, 0.2);">
+        <h2 class="section-title">Education Background</h2>
+        <div class="edu-grid">
+            <div class="edu-card">
+                <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h3>B.Tech in Computer Science</h3>
+                <p class="institute">Dr Babasaheb Ambedkar Technological University, Lonere</p>
+                <p class="duration">Year: 2026 | CGPA: 7.50</p>
+            </div>
+            <div class="edu-card">
+                <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+                <h3>HSC (12th Standard)</h3>
+                <p class="institute">Maharashtra State Board</p>
+                <p class="duration">Year: 2022 | Percentage: 71.83%</p>
+            </div>
+            <div class="edu-card">
+                <div class="edu-icon"><i class="fa-solid fa-building"></i></div>
+                <h3>SSC (10th Standard)</h3>
+                <p class="institute">Maharashtra State Board</p>
+                <p class="duration">Year: 2020 | Percentage: 87.6%</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">Academic Projects</h2>
+        <div class="project-grid" style="grid-template-columns: 1fr;">
+            <div class="project-card" style="text-align: left;">
+                <div class="edu-icon" style="text-align: left; font-size: 30px;"><i class="fa-solid fa-network-wired"></i></div>
+                <h3>CAMPUS CONNECT: AN ANDROID BASED COMMUNICATION SYSTEM</h3>
+                <p style="margin-top: 10px;">Developed Campus Connect, a cross-platform communication system designed to streamline information sharing and collaboration within a college campus. Built using Python and SQLite, the application enabled efficient communication between students, faculty, and administrators through a centralized platform, improving accessibility and engagement.</p>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>SQLite</span>
+                    <span>Android System</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <p>Feel free to reach out to me for any job opportunities, project collaborations, or technical queries.</p>
+                <p style="color: #fff;"><i class="fa-solid fa-envelope" style="color: #38bdf8; margin-right: 10px;"></i> atarsartaj95@gmail.com</p>
+                <p style="color: #fff; margin-top: 10px;"><i class="fa-solid fa-phone" style="color: #38bdf8; margin-right: 10px;"></i> +91 7385757945</p>
+                <div class="social-icons" style="margin-top: 20px;">
+                    <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Designed & Built by Sartaj Hiralal Attar | © 2026</p>
+    </footer>
+
+</body>
+</html>
